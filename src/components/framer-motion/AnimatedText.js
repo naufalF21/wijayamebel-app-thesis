@@ -3,7 +3,12 @@
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-export default function AnimatedText({ as: Component = 'h1', text, className }) {
+export default function AnimatedText({
+	as: Component = 'h1',
+	text,
+	className,
+	staggerDuration = 0.1,
+}) {
 	const controls = useAnimation();
 	const textArray = Array.isArray(text) ? text : [text];
 	const ref = useRef(null);
@@ -43,7 +48,7 @@ export default function AnimatedText({ as: Component = 'h1', text, className }) 
 				initial="hidden"
 				animate={controls}
 				variants={{
-					visible: { transition: { staggerChildren: 0.05 } },
+					visible: { transition: { staggerChildren: staggerDuration } },
 					hidden: {},
 				}}
 				aria-hidden

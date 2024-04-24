@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "Kursi Sofa Tamu",
+		"image": "kursi-sofa-tamu.png"
+	},
+	{
+		"id": 2,
+		"name": "Bufet Pajangan",
+		"image": "bufet-pajangan.png"
+	},
+	{
+		"id": 3,
+		"name": "Tempat Tidur Ukir",
+		"image": "tempat-tidur-ukir.png"
+	},
+	{
+		"id": 4,
+		"name": "Meja Kursi Tamu",
+		"image": "meja-kursi-tamu.png"
+	},
+	{
+		"id": 5,
+		"name": "Lemari Pakaian",
+		"image": "lemari-pakaian.png"
+	},
+	{
+		"id": 6,
+		"name": "Kursi Meja Makan",
+		"image": "kursi-meja-makan.png"
+	},
+	{
+		"id": 7,
+		"name": "Bufet Cermin",
+		"image": "bufet-cermin.png"
+	},
+	{
+		"id": 8,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png"
+	}
+]
