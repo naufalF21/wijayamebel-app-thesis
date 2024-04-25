@@ -8,7 +8,7 @@ export default function HeroSection() {
 			<div className="flex flex-col gap-10 py-5 pr-80">
 				<AnimatedText
 					as="h1"
-					staggerDuration={0.05}
+					staggerDuration={0.03}
 					className="font-semibold text-5xl uppercase leading-[60px]"
 					text={['Ciptakan Kenyamanan', 'Dengan Keindahan', 'Ruangan']}
 				></AnimatedText>
