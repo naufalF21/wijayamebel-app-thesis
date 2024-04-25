@@ -19,7 +19,7 @@ export default async function GallerySection() {
 					className="font-semibold text-3xl uppercase"
 					text="Galeri Produk"
 				></AnimatedText>
-				<p className="text-base">
+				<p className="text-base text-gray-400">
 					Jelajahi koleksi lengkap kami dengan tampilan visual yang menarik dari semua
 					produk furnitur yang tersedia, <br /> dan temukan inspirasi untuk mengubah ruang
 					Anda menjadi tempat yang indah dan fungsional.

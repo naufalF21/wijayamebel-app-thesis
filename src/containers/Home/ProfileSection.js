@@ -32,7 +32,7 @@ export default async function ProfileSection() {
 						className="font-semibold text-3xl uppercase"
 						text="Tentang Kami"
 					></AnimatedText>
-					<p className="text-base text-justify">
+					<p className="text-base text-justify text-gray-400">
 						Mebel Wijaya merupakan perusahaan mebel yang berkomitmen untuk memberikan
 						sentuhan istimewa dan kenyamanan dalam setiap rumah. Sejak berdiri, kami
 						telah memegang teguh misi untuk mengubah ruang hidup menjadi karya seni
@@ -45,7 +45,7 @@ export default async function ProfileSection() {
 							<p className="text-2xl font-medium">
 								<Counter value={item.amount} />+
 							</p>
-							<p>{item.description}</p>
+							<p className="text-base text-gray-400">{item.description}</p>
 						</li>
 					))}
 				</ul>

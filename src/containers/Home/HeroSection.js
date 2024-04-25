@@ -12,7 +12,7 @@ export default function HeroSection() {
 					className="font-semibold text-5xl uppercase leading-[60px]"
 					text={['Ciptakan Kenyamanan', 'Dengan Keindahan', 'Ruangan']}
 				></AnimatedText>
-				<p className="text-xl font-normal">
+				<p className="text-xl font-normal text-gray-400">
 					Dengan penuh perhatian terhadap detail, ciptakan suasana yang memeluk dan
 					merangkul, dimana keindahan tak hanya terlihat, tetapi juga terasa.
 				</p>
