@@ -1,3 +1,4 @@
+import AnimatedLayout from '@/components/framer-motion/AnimatedLayout';
 import AnimatedText from '@/components/framer-motion/AnimatedText';
 import Image from 'next/image';
 
@@ -26,24 +27,26 @@ export default async function GallerySection() {
 				</p>
 			</div>
 			<div className="mt-10">
-				<ul className="grid grid-cols-4">
-					{products.map((product, index) => (
-						<li
-							key={index}
-							className="w-full relative overflow-hidden bg-cover bg-no-repeat"
-						>
-							<Image
-								className="w-full transition duration-300 ease-in-out hover:scale-110"
-								src={`/images/products/${product.image}`}
-								alt={product.name}
-								width={400}
-								height={0}
-								quality={100}
-								priority
-							/>
-						</li>
-					))}
-				</ul>
+				<AnimatedLayout>
+					<ul className="grid grid-cols-4">
+						{products.map((product, index) => (
+							<li
+								key={index}
+								className="w-full relative overflow-hidden bg-cover bg-no-repeat"
+							>
+								<Image
+									className="w-full transition duration-300 ease-in-out hover:scale-110"
+									src={`/images/products/${product.image}`}
+									alt={product.name}
+									width={400}
+									height={0}
+									quality={100}
+									priority
+								/>
+							</li>
+						))}
+					</ul>
+				</AnimatedLayout>
 			</div>
 		</section>
 	);

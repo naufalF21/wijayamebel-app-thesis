@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/framer-motion/AnimatedText';
 import Counter from '@/components/framer-motion/Counter';
+import AnimatedLayout from '@/components/framer-motion/AnimatedLayout';
 import Image from 'next/image';
 
 async function getListProfile() {
@@ -16,14 +17,16 @@ export default async function ProfileSection() {
 		<section className="px-[108px] py-20 min-h-screen flex flex-row justify-between items-center">
 			<div>
 				<div className="bg-gray-800 w-[454px] h-[426px] absolute -z-10"></div>
-				<Image
-					className="mt-16 ml-16"
-					src="/images/profile-image.png"
-					alt="profile-image"
-					width={454}
-					height={426}
-					priority
-				/>
+				<AnimatedLayout>
+					<Image
+						className="mt-16 ml-16"
+						src="/images/profile-image.png"
+						alt="profile-image"
+						width={454}
+						height={426}
+						priority
+					/>
+				</AnimatedLayout>
 			</div>
 			<div className="max-w-[465px] flex flex-col gap-8">
 				<div className="p-10 bg-gray-800 text-white flex flex-col gap-5">
