@@ -3,21 +3,43 @@
 import { BiHomeSmile } from 'react-icons/bi';
 import { BiSearch } from 'react-icons/bi';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Header() {
 	const pathname = usePathname();
-	const navs = ['Galeri', 'FAQ', 'Kontak'];
+	const navs = [
+		{
+			nama: 'Produk',
+			link: '/produk',
+		},
+		{
+			nama: 'FAQ',
+			link: '/faq',
+		},
+		{
+			nama: 'Kontak',
+			link: '/kontak',
+		},
+	];
 
 	return (
 		<header className="w-full px-[108px] py-10">
 			<div className="flex flex-row w-full justify-between">
-				<span className={`cursor-pointer hover-link ${pathname === '/' && 'active-link'}`}>
+				<Link
+					href="/"
+					className={`cursor-pointer hover-link ${pathname === '/' && 'active-link'}`}
+				>
 					<BiHomeSmile className="w-6 h-6" />
-				</span>
+				</Link>
 				<ul className="flex flex-row gap-10">
 					{navs.map((nav, index) => (
-						<li key={index} className="cursor-pointer hover-link">
-							{nav}
+						<li
+							key={index}
+							className={`cursor-pointer hover-link ${
+								pathname === nav.link && 'active-link'
+							}`}
+						>
+							<Link href={nav.link}>{nav.nama}</Link>
 						</li>
 					))}
 				</ul>

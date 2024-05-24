@@ -3,7 +3,7 @@ import { BiLogoInstagram } from 'react-icons/bi';
 import { IoMailOutline } from 'react-icons/io5';
 
 export default function Footer(params) {
-	const navs = ['Beranda', 'Galeri', 'FAQ', 'Kontak'];
+	const navs = ['Beranda', 'Produk', 'FAQ', 'Kontak'];
 
 	return (
 		<footer className="px-[108px] pt-20 pb-10 flex flex-row w-full justify-between gap-16">

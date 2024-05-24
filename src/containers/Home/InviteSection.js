@@ -19,7 +19,7 @@ export default function InviteSection() {
 					sama secara professional dengan kami?
 				</p>
 			</div>
-			<Button variant="outline" text="Pesan Sekarang" />
+			<Button variant="outline" text="Jelajahi Sekarang" />
 		</section>
 	);
 }

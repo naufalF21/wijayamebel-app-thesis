@@ -18,7 +18,7 @@ export default async function GallerySection() {
 				<AnimatedText
 					as="h2"
 					className="font-semibold text-3xl uppercase"
-					text="Galeri Produk"
+					text="Produk Kami"
 				></AnimatedText>
 				<p className="text-base text-gray-400">
 					Jelajahi koleksi lengkap kami dengan tampilan visual yang menarik dari semua
@@ -29,22 +29,24 @@ export default async function GallerySection() {
 			<div className="mt-10">
 				<AnimatedLayout>
 					<ul className="grid grid-cols-4">
-						{products.map((product, index) => (
-							<li
-								key={index}
-								className="w-full relative overflow-hidden bg-cover bg-no-repeat"
-							>
-								<Image
-									className="w-full transition duration-300 ease-in-out hover:scale-110"
-									src={`/images/products/${product.image}`}
-									alt={product.name}
-									width={400}
-									height={0}
-									quality={100}
-									priority
-								/>
-							</li>
-						))}
+						{products.map((product, index) => {
+							return (
+								<li
+									key={index}
+									className="w-full relative overflow-hidden bg-cover bg-no-repeat"
+								>
+									<Image
+										className="w-full transition duration-300 ease-in-out hover:scale-110"
+										src={`/images/products/${product.image}`}
+										alt={product.name}
+										width={400}
+										height={0}
+										quality={100}
+										priority
+									/>
+								</li>
+							);
+						})}
 					</ul>
 				</AnimatedLayout>
 			</div>
