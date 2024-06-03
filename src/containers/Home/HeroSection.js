@@ -41,7 +41,7 @@ export default function HeroSection() {
 				</div>
 			</div>
 			<div className="w-[463px] h-[380px]">
-				<div className="w-[324px] h-[324px] rounded-full bg-gray-800 absolute top-[222px] right-[247px] -z-10"></div>
+				<div className="w-[324px] h-[324px] rounded-full bg-gray-800 absolute top-[222px] right-[247px]"></div>
 				<motion.div
 					initial="offscreen"
 					whileInView="onscreen"

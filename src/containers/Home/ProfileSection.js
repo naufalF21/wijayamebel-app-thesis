@@ -16,10 +16,9 @@ export default async function ProfileSection() {
 	return (
 		<section className="px-[108px] py-20 min-h-screen flex flex-row justify-between items-center">
 			<div>
-				<div className="bg-gray-800 w-[454px] h-[426px] absolute -z-10"></div>
 				<AnimatedLayout>
 					<Image
-						className="mt-16 ml-16"
+						className="mt-16 ml-16 absolute"
 						src="/images/profile-image.png"
 						alt="profile-image"
 						width={454}
@@ -27,6 +26,7 @@ export default async function ProfileSection() {
 						priority
 					/>
 				</AnimatedLayout>
+				<div className="bg-gray-800 w-[454px] h-[426px]"></div>
 			</div>
 			<div className="max-w-[465px] flex flex-col gap-8">
 				<div className="p-10 bg-gray-800 text-white flex flex-col gap-5">

@@ -1,0 +1,82 @@
+[
+	{
+		"categoryId": 1,
+		"questions": [
+			{
+				"id": 1,
+				"question": "Bagaimana saya bisa melakukan pemesanan?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 2,
+				"question": "Metode pembayaran apa yang tersedia?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 3,
+				"question": "Dapatkah saya melacak pesanan saya setelah pesanan dilakukan?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 4,
+				"question": "Apakah ada dukungan untuk pelanggan?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 5,
+				"question": "Apa kebijakan pengembalian barang?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			}
+		]
+	},
+	{
+		"categoryId": 2,
+		"questions": [
+			{
+				"id": 1,
+				"question": "Apakah saya bisa mengubah atau membatalkan pesanan setelah dikonfirmasi?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 2,
+				"question": "Berapa lama waktu pengiriman?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 3,
+				"question": "Apakah kalian mengirimkan produk ke luar negeri?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 4,
+				"question": "Apa yang harus saya lakukan jika paket saya hilang atau rusak?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			}
+		]
+	},
+	{
+		"categoryId": 3,
+		"questions": [
+			{
+				"id": 1,
+				"question": "Apakah pembayaran saya aman?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 2,
+				"question": "Apakah saya bisa membayar dengan mata uang lain?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 3,
+				"question": "Apakah ada biaya tambahan untuk pembayaran tertentu?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			},
+			{
+				"id": 4,
+				"question": "Apakah saya bisa membayar dengan cicilan?",
+				"answer": "Lorem ipsum dolor sit amet consectetur. Orci est lectus dui facilisis neque habitant quam lacus. Morbi arcu elementum id nisl arcu sed commodo."
+			}
+		]
+	}
+]

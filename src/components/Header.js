@@ -33,14 +33,15 @@ export default function Header() {
 				</Link>
 				<ul className="flex flex-row gap-10">
 					{navs.map((nav, index) => (
-						<li
-							key={index}
-							className={`cursor-pointer hover-link ${
-								pathname === nav.link && 'active-link'
-							}`}
-						>
-							<Link href={nav.link}>{nav.nama}</Link>
-						</li>
+						<Link href={nav.link} key={index}>
+							<li
+								className={`cursor-pointer hover-link ${
+									pathname === nav.link && 'active-link'
+								}`}
+							>
+								{nav.nama}
+							</li>
+						</Link>
 					))}
 				</ul>
 				<span className="cursor-pointer hover-link">
