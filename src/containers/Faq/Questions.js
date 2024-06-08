@@ -1,3 +1,4 @@
+import Loading from '@/components/Loading';
 import { useState, useEffect } from 'react';
 
 export default function Questions({ value }) {
@@ -17,7 +18,7 @@ export default function Questions({ value }) {
 			});
 	}, [value]);
 
-	if (isLoading) return <p>Loading...</p>;
+	if (isLoading) return <Loading />;
 	if (!data) return <p>No data</p>;
 
 	return (

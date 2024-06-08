@@ -2,41 +2,92 @@
 	{
 		"id": 1,
 		"name": "Kursi Sofa Tamu",
-		"image": "kursi-sofa-tamu.png"
+		"image": "kursi-sofa-tamu.png",
+		"category": "Kursi",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 2,
 		"name": "Bufet Pajangan",
-		"image": "bufet-pajangan.png"
+		"image": "bufet-pajangan.png",
+		"category": "Bufet",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 3,
 		"name": "Tempat Tidur Ukir",
-		"image": "tempat-tidur-ukir.png"
+		"image": "tempat-tidur-ukir.png",
+		"category": "Tempat Tidur",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 4,
 		"name": "Meja Kursi Tamu",
-		"image": "meja-kursi-tamu.png"
+		"image": "meja-kursi-tamu.png",
+		"category": "Set Meja Kursi",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 5,
 		"name": "Lemari Pakaian",
-		"image": "lemari-pakaian.png"
+		"image": "lemari-pakaian.png",
+		"category": "Lemari",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 6,
 		"name": "Kursi Meja Makan",
-		"image": "kursi-meja-makan.png"
+		"image": "kursi-meja-makan.png",
+		"category": "Set Meja Kursi",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 7,
 		"name": "Bufet Cermin",
-		"image": "bufet-cermin.png"
+		"image": "bufet-cermin.png",
+		"category": "Bufet",
+		"description": "Kursi jati bagus"
 	},
 	{
 		"id": 8,
 		"name": "Bangku Bale Bale",
-		"image": "bangku-bale-bale.png"
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
+	},
+	{
+		"id": 9,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
+	},
+	{
+		"id": 10,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
+	},
+	{
+		"id": 11,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
+	},
+	{
+		"id": 12,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
+	},
+	{
+		"id": 13,
+		"name": "Bangku Bale Bale",
+		"image": "bangku-bale-bale.png",
+		"category": "Bangku",
+		"description": "Kursi jati bagus"
 	}
 ]

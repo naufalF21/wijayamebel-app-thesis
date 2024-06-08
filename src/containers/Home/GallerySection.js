@@ -30,22 +30,24 @@ export default async function GallerySection() {
 				<AnimatedLayout>
 					<ul className="grid grid-cols-4">
 						{products.map((product, index) => {
-							return (
-								<li
-									key={index}
-									className="w-full relative overflow-hidden bg-cover bg-no-repeat"
-								>
-									<Image
-										className="w-full transition duration-300 ease-in-out hover:scale-110"
-										src={`/images/products/${product.image}`}
-										alt={product.name}
-										width={400}
-										height={0}
-										quality={100}
-										priority
-									/>
-								</li>
-							);
+							if (product.id <= 8) {
+								return (
+									<li
+										key={index}
+										className="w-full relative overflow-hidden bg-cover bg-no-repeat"
+									>
+										<Image
+											className="w-full transition duration-300 ease-in-out hover:scale-110"
+											src={`/images/products/${product.image}`}
+											alt={product.name}
+											width={400}
+											height={0}
+											quality={100}
+											priority
+										/>
+									</li>
+								);
+							}
 						})}
 					</ul>
 				</AnimatedLayout>
