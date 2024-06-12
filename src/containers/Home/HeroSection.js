@@ -21,8 +21,8 @@ export default function HeroSection() {
 	};
 
 	return (
-		<section className="flex flex-row w-full justify-between px-[108px] py-14 gap-20 overflow-hidden">
-			<div className="flex flex-col gap-10 py-5 pr-80">
+		<section className="flex flex-row w-full justify-between lg:px-[108px] lg:py-14 gap-20 overflow-hidden px-5">
+			<div className="flex flex-col gap-10 py-5 lg:pr-80">
 				<AnimatedText
 					as="h1"
 					staggerDuration={0.03}
@@ -40,7 +40,7 @@ export default function HeroSection() {
 					</button>
 				</div>
 			</div>
-			<div className="w-[463px] h-[380px]">
+			<div className="w-[463px] h-[380px] hidden lg:block">
 				<div className="w-[324px] h-[324px] rounded-full bg-gray-800 absolute top-[222px] right-[247px]"></div>
 				<motion.div
 					initial="offscreen"

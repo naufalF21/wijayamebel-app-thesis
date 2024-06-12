@@ -13,7 +13,7 @@ export default async function GallerySection() {
 	const products = await getProducts();
 
 	return (
-		<section className="px-[108px] min-h-screen py-16">
+		<section className="lg:px-[108px] lg:min-h-screen lg:py-16 px-5">
 			<div className="text-center flex flex-col gap-5">
 				<AnimatedText
 					as="h2"

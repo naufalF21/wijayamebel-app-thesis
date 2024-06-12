@@ -14,8 +14,8 @@ export default async function ProfileSection() {
 	const data = await getListProfile();
 
 	return (
-		<section className="px-[108px] py-20 min-h-screen flex flex-row justify-between items-center">
-			<div>
+		<section className="lg:px-[108px] py-20 lg:min-h-screen flex lg:flex-row flex-col justify-between items-center px-5">
+			<div className="hidden lg:block">
 				<AnimatedLayout>
 					<Image
 						className="mt-16 ml-16 absolute"
@@ -28,7 +28,16 @@ export default async function ProfileSection() {
 				</AnimatedLayout>
 				<div className="bg-gray-800 w-[454px] h-[426px]"></div>
 			</div>
-			<div className="max-w-[465px] flex flex-col gap-8">
+			<div className="lg:hidden">
+				<Image
+					src="/images/profile-image.png"
+					alt="profile-image"
+					width={1000}
+					height={426}
+					priority
+				/>
+			</div>
+			<div className="lg:max-w-[465px] flex flex-col gap-8">
 				<div className="p-10 bg-gray-800 text-white flex flex-col gap-5">
 					<AnimatedText
 						as="h2"

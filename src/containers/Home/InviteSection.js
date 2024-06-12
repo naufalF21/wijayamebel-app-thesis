@@ -3,7 +3,7 @@ import AnimatedText from '@/components/framer-motion/AnimatedText';
 
 export default function InviteSection() {
 	return (
-		<section className="px-[108px] py-16 flex flex-col items-center gap-10">
+		<section className="lg:px-[108px] lg:py-16 py-20 flex flex-col items-center gap-10">
 			<div className="text-center flex flex-col gap-5">
 				<AnimatedText
 					as="h2"

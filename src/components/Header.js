@@ -23,7 +23,7 @@ export default function Header() {
 	];
 
 	return (
-		<header className="w-full px-[108px] py-10">
+		<header className="w-full lg:px-[108px] py-10 px-5 hidden lg:block">
 			<div className="flex flex-row w-full justify-between">
 				<Link
 					href="/"
