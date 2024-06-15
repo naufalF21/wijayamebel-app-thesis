@@ -44,9 +44,9 @@ export default function Header() {
 						</Link>
 					))}
 				</ul>
-				<span className="cursor-pointer hover-link">
+				<button className="cursor-pointer hover-link">
 					<BiSearch className="w-6 h-6" />
-				</span>
+				</button>
 			</div>
 		</header>
 	);

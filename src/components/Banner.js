@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/framer-motion/AnimatedText';
 import Link from 'next/link';
 
-export default function Banner({ name, link }) {
+export default function Banner({ name, link, slug }) {
 	return (
 		<section className="bg-gray-800 text-white py-[30px] text-center flex flex-col gap-[10px]">
 			<AnimatedText
@@ -11,7 +11,8 @@ export default function Banner({ name, link }) {
 				className="font-semibold text-3xl"
 			/>
 			<div>
-				<Link href="/">Home</Link> / <Link href={link}>{name}</Link>
+				<Link href="/">Home</Link> / <Link href={link}>{name}</Link>{' '}
+				{slug && <span> / {slug}</span>}
 			</div>
 		</section>
 	);

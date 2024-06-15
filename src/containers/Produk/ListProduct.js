@@ -1,28 +1,14 @@
 'use client';
 
 import Card from '@/components/Card';
-import Loading from '@/components/Loading';
+import FilterProducts from '@/components/FilterProducts';
 import Pagination from '@/components/Pagination';
 import { paginate } from '@/helpers/paginate';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-export default function ListProduct() {
-	const [data, setData] = useState(null);
-	const [isLoading, setLoading] = useState(true);
+export default function ListProduct({ data }) {
 	const [currentPage, setCurrentPage] = useState(1);
 	const pageSize = 8;
-
-	useEffect(() => {
-		fetch(`/api/products`)
-			.then((res) => res.json())
-			.then((data) => {
-				setData(data);
-				setLoading(false);
-			});
-	}, []);
-
-	if (isLoading) return <Loading />;
-	if (!data) return <p>No data</p>;
 
 	const paginatedPosts = paginate(data, currentPage, pageSize);
 
@@ -44,23 +30,15 @@ export default function ListProduct() {
 				<span className="w-full">
 					Menampilkan 1-{paginatedPosts.length} dari {data.length} hasil
 				</span>
-				<div className="flex flex-row w-full items-center gap-1 justify-end">
-					<span>Urutkan berdasarkan :</span>
-					<select className="select select-bordered w-full max-w-xs rounded-full">
-						<option defaultValue>Default</option>
-						<option>Terbaru</option>
-						<option>Harga Minimum</option>
-						<option>Harga Maksimum</option>
-					</select>
-				</div>
+				<FilterProducts />
 			</div>
 			<div className={`grid grid-cols-4 gap-8`}>
 				{paginatedPosts.map((product, index) => (
 					<Card
 						key={index}
+						id={product.id}
 						category={product.category}
 						name={product.name}
-						description={product.description}
 						image={product.image}
 					/>
 				))}

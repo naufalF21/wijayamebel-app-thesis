@@ -16,8 +16,6 @@ export default function Pagination({
 	if (pagesCount === 1) return null;
 	const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
 
-	console.log(pages.length);
-
 	return (
 		<div className="flex flex-row items-center gap-4 text-gray-800">
 			{currentPage > 1 && (

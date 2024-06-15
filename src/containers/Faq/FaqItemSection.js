@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Questions from './Questions';
+import Loading from '@/app/loading';
 
-export default function FaqItemSection() {
+export default function FaqItemSection({ data }) {
 	const [value, setValue] = useState(1);
 
 	const categories = [
@@ -20,6 +21,8 @@ export default function FaqItemSection() {
 			name: 'Pembayaran',
 		},
 	];
+
+	data = data.find((item) => item.categoryId === value);
 
 	return (
 		<section className="px-[108px] py-12 flex flex-row justify-between w-full gap-10">
@@ -42,7 +45,9 @@ export default function FaqItemSection() {
 				})}
 			</ul>
 			<div className="w-full">
-				<Questions value={value} />
+				<Suspense fallback={<Loading />}>
+					<Questions data={data.questions} />
+				</Suspense>
 			</div>
 		</section>
 	);
