@@ -1,9 +1,9 @@
 'use client';
 
 import { BiHomeSmile } from 'react-icons/bi';
-import { BiSearch } from 'react-icons/bi';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Search from '@/components/Search';
 
 export default function Header() {
 	const pathname = usePathname();
@@ -25,13 +25,15 @@ export default function Header() {
 	return (
 		<header className="w-full lg:px-[108px] py-10 px-5 hidden lg:block">
 			<div className="flex flex-row w-full justify-between">
-				<Link
-					href="/"
-					className={`cursor-pointer hover-link ${pathname === '/' && 'active-link'}`}
-				>
-					<BiHomeSmile className="w-6 h-6" />
-				</Link>
-				<ul className="flex flex-row gap-10">
+				<div className="flex w-full ">
+					<Link
+						href="/"
+						className={`cursor-pointer hover-link ${pathname === '/' && 'active-link'}`}
+					>
+						<BiHomeSmile className="w-6 h-6" />
+					</Link>
+				</div>
+				<ul className="flex flex-row gap-10 w-full justify-center">
 					{navs.map((nav, index) => (
 						<Link href={nav.link} key={index}>
 							<li
@@ -44,9 +46,9 @@ export default function Header() {
 						</Link>
 					))}
 				</ul>
-				<button className="cursor-pointer hover-link">
-					<BiSearch className="w-6 h-6" />
-				</button>
+				<div className="w-full flex justify-end">
+					<Search />
+				</div>
 			</div>
 		</header>
 	);

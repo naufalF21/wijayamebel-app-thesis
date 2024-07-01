@@ -11,6 +11,7 @@ async function getProducts() {
 
 export default async function GallerySection() {
 	const products = await getProducts();
+	const { data } = products;
 
 	return (
 		<section className="lg:px-[108px] lg:min-h-screen lg:py-16 px-5">
@@ -29,7 +30,7 @@ export default async function GallerySection() {
 			<div className="mt-10">
 				<AnimatedLayout>
 					<ul className="grid grid-cols-4">
-						{products.map((product, index) => {
+						{data.map((product, index) => {
 							if (product.id <= 8) {
 								return (
 									<li

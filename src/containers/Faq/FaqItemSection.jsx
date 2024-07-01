@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, Suspense } from 'react';
-import Questions from './Questions';
 import Loading from '@/app/loading';
+import Questions from './Questions';
 
 export default function FaqItemSection({ data }) {
 	const [value, setValue] = useState(1);

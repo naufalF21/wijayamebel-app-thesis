@@ -1,7 +1,7 @@
-import AnimatedText from '@/components/framer-motion/AnimatedText';
 import Counter from '@/components/framer-motion/Counter';
 import AnimatedLayout from '@/components/framer-motion/AnimatedLayout';
 import Image from 'next/image';
+import AnimatedText from '@/components/framer-motion/AnimatedText';
 
 async function getListProfile() {
 	const res = await fetch(`${process.env.API_URL}/api/advantages`, { cache: 'no-store' });

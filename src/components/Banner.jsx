@@ -1,5 +1,5 @@
-import AnimatedText from '@/components/framer-motion/AnimatedText';
 import Link from 'next/link';
+import AnimatedText from './framer-motion/AnimatedText';
 
 export default function Banner({ name, link, slug }) {
 	return (

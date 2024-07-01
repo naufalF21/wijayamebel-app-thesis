@@ -38,7 +38,7 @@ export default function Footer(params) {
 					quality={100}
 					priority
 				/>
-				<ul className="flex flex-row gap-20 mb-5">
+				<ul className="flex flex-row justify-between mb-5">
 					{navs.map((nav, index) => (
 						<li
 							key={index}
@@ -65,7 +65,6 @@ export default function Footer(params) {
 						</li>
 					</ul>
 				</div>
-				<p className="text-sm text-gray-400">©2024 Copyright All rights reserved</p>
 			</div>
 		</footer>
 	);
